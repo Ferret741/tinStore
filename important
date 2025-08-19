@@ -1,1 +1,0 @@
-docker exec -it tinstore-db-1 bash
