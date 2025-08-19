@@ -168,8 +168,8 @@ if __name__ == "__main__":
     """
     Main program. We are looking for credentials in the following levels
     - Environment variables
-    - Configuration file (yaml file with top-level username/password keys)
     - Command line --username/--password values
+    - Configuration file (yaml file with top-level username/password keys)
 
     A value provided at each level will override the one above it (e.g. a
     username provided at command line will override usernames provided in
@@ -194,11 +194,6 @@ if __name__ == "__main__":
     if check_if_file_exists(script_args.config_file):
         [script_args.username,
          script_args.password] = obtain_creds_from_conf(script_args.config_file)
-
-
-
-    ## ========================================================================
-    ## Parse the configuration file and retrieve the username and password
 
 
     ## ========================================================================
